@@ -110,10 +110,62 @@ body {
   float: right;
 }
 
-hr {
-  color: lightgrey;
+.shop {
+  background-color: #f0f0f0;
+  padding: 10px;
 }
 
+.cardContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-flow: row nowrap;
+  padding: 10px 0px 10px 0px;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.shopCard {
+  border-radius: 12px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid lightgrey;
+}
+
+.shopImg {
+  border-radius: 12px 12px 0px 0px;
+  width: 300px;
+  float: left;
+}
+
+.shopText {
+  float:right;
+  padding: 20px;
+}
+
+.shopButton {
+  font-size: 20px;
+  background-color: #d64e04;
+  border: none;
+  color: white;
+  padding: 20px 32px;
+  margin-left: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 12px;
+  width: 90%;
+  box-shadow: 0 7px #a33b02;
+}
+
+.shopButton:hover {
+  background-color: #a33b02;
+  box-shadow: 0 7px #802f03;
+}
+  
 footer {
   background-color: lightgrey;
   padding: 10px;
