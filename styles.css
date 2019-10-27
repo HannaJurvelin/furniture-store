@@ -167,8 +167,18 @@ body {
 }
   
 footer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
   background-color: lightgrey;
   padding: 10px;
   margin: 0;
   overflow: hidden;
+}
+
+.GitHubLogo {
+  width: 32px;
+  height: 32px;
+  padding: 10px;
 }
