@@ -13,11 +13,11 @@
 
 <body>
     <nav>
-        <img src="furniture_store-01.svg" alt="Logo of the store" class="storeLogo">
+        <img src="Images/furniture_store-01.svg" alt="Logo of the store" class="storeLogo">
         <ul>
-            <li><a href="#">Shop</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#about">About</a></li>
         </ul>
     </nav>
 
@@ -28,39 +28,39 @@
                 <button class="bannerButton">Sell it to us!</button>
             </div>
         </div>
-        <img src="banner.png" alt="Abandoned chair" class="wrappedImage">
+        <img src="Images/banner.png" alt="Abandoned chair" class="wrappedImage">
     </div>
 
-    <div class="flex-container">
+    <div class="flex-container" id="about">
         <div class="card1">
-            <img src="icon1-01.svg" alt="Icon of a person" class="icon">
+            <img src="Images/icon1-01.svg" alt="Icon of a person" class="icon">
             <div class="cardText">
                 <h2>Quality service</h2>
-                <p>We'll buy your well-loved furniture<br>and will even pick it up from your house!</p>
+                <p>Give your used items new life with our service. We'll buy your well-loved furniture and will even pick it up from your house!</p>
             </div>
         </div>
         <div class="card2">
-            <img src="icon2-01.svg" alt="Icon of a paintbrush" class="icon">
+            <img src="Images/icon2-01.svg" alt="Icon of a paintbrush" class="icon">
             <div class="cardText">
                 <h2>Repairs</h2>
-                <p>We'll breath new live to your old furniture<br>and make the repairs it needs.</p>
+                <p>We'll breath new live to your old furniture and make the repairs it needs. Our workers make repairs ranging from a lick of paint to a whole reupholsteration.</p>
             </div>
         </div>
         <div class="card3">
-            <img src="icon3-01.svg" alt="Icon of a shopping cart" class="icon">
+            <img src="Images/icon3-01.svg" alt="Icon of a shopping cart" class="icon">
             <div class="cardText">
                 <h2>Shop Used Furniture</h2>
-                <p>The repaired furniture can be bought <br>from our online store.</p>
+                <p>Need new furniture? Rather than buying new ones, fully repaired furniture can be bought from our online store.</p>
             </div>
         </div>
     </div>
 
-    <div class="shop">
+    <div class="shop" id="shop">
         <h1>Shop Furniture</h1>
 
         <div class="cardContainer">
             <div class="shopCard">
-                <img src="lamp.png" alt="Photo of a lamp" class="shopImg">
+                <img src="Images/lamp.png" alt="Photo of a lamp" class="shopImg">
                 <div class="shopText">
                     <h2>Lamp</h2>
                     <p>Beautiful second hand lamp. Cords have been repaired, includes a new light bulb.</p>
@@ -68,7 +68,7 @@
                 </div>
             </div>
             <div class="shopCard">
-                <img src="couch.png" alt="Photo of a couch" class="shopImg">
+                <img src="Images/couch.png" alt="Photo of a couch" class="shopImg">
                 <div class="shopText">
                     <h2>Couch</h2>
                     <p>Comfortable satin couch. Reupholstered fabric.</p>
@@ -76,7 +76,7 @@
                 </div>
             </div>
             <div class="shopCard">
-                <img src="chair.png" alt="Photo of a chair" class="shopImg">
+                <img src="Images/chair.png" alt="Photo of a chair" class="shopImg">
                 <div class="shopText">
                     <h2>Chair</h2>
                     <p>Lovely wicker chair. Completely repaired and sturdy.</p>
@@ -86,8 +86,28 @@
         </div>
     </div>
 
-    <div class="aboutContainer">
-        <img src="map.png" alt="Map picture" class="mapPic">
+    <div class="contactContainer" id="contact">
+        <img src="Images/map.png" alt="Map picture" class="mapPic">
+        <div>
+            <form>
+                <h1>Contact us:</h1>
+                <label for="name">Name</label>
+                <br>
+                <input type="text" name="name" placeholder="Your name..">
+                <br><br>
+                <label for="email">E-mail</label>
+                <br>
+                <input type="email" name="email" placeholder="Your email..">
+                <br><br>
+                <label for="message">Message</label>
+                <br>
+                <textarea name="message" rows="6" cols="55" placeholder="Your message.."></textarea>
+                <br><br>
+                <input type="checkbox" name="newsletter" value="newsletter"> I want to subscribe to a newsletter.
+                <br><br>
+                <input type="submit" value="Submit">
+              </form> 
+        </div>
     </div>
 
 
@@ -95,7 +115,7 @@
     <footer>
         <p>Made by Hanna</p>
         <a href="https://github.com/HannaJurvelin/furniture-store" target="_blank">
-            <img src="GitHub-Mark-02.svg" alt="GitHub logo" class="GitHubLogo">
+            <img src="Images/GitHub-Mark-02.svg" alt="GitHub logo" class="GitHubLogo">
         </a>
     </footer>
 </body>
