@@ -1,19 +1,28 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
   }
 
   nav {
-    background: #ccc;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #a31205;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+
+  .storeLogo {
+    width: 150px;
+    padding: 10px;
   }
 
   nav ul {
-    position: sticky;
     list-style-type: none;
-    padding: 0;
-    margin: 0;
-    background-color: #f1f1f1;
-    overflow: hidden;
-    width: 100%;
   }
 
   li {
@@ -21,17 +30,16 @@ body {
   }
   
   li a {
+    font-weight: 600;
     display: block;
-    color: #000;
+    color: rgb(255, 255, 255);
     padding: 14px 16px;
     text-align: center;
     text-decoration: none;
   }
   
-  /* Change the link color on hover */
   li a:hover {
-    background-color: #555;
-    color: white;
+    background-color: #690b03;
   }
 
 .banner {
@@ -48,6 +56,7 @@ body {
 
 .floatingText {
   font-size: 35px;
+  font-weight: 800;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -78,7 +87,7 @@ body {
 
 .bannerButton:hover {
   background-color: #a31205;
-  box-shadow: 0 7px #690b03
+  box-shadow: 0 7px #690b03;
 }
 
 .wrappedImage {
@@ -171,7 +180,7 @@ footer {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center;
-  background-color: lightgrey;
+  background-color: #f0f0f0;
   padding: 10px;
   margin: 0;
   overflow: hidden;
